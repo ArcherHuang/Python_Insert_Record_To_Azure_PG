@@ -24,7 +24,15 @@
 #       "aaa": "bbb111",
 #     },
 #     "evaluationCodeVersion": "GitHub Commit SHA",
-#     "evaluationResult": "success",
+#     "evaluationResult": {
+#         "test": "The test maximum is 324, the test number is 60",
+#         "model": "GPT",
+#         "action": "Option 1: accuracy test",
+#         "option": "1",
+#         "status": "ok",
+#         "outcome": "Correct rate:35/60",
+#         "blob_file_name": "processed/2023_Oct30_063333_accuracy_evaluation.csv"
+#     },
 # }
 
 import db_ops
@@ -37,11 +45,19 @@ evaluation_result = {
       "aaa": "bbb111",
     },
     "evaluationCodeVersion": "bd30d437bee125befd7d5162d8a9f7fcf9baf57b",
-    "evaluationResult": "success",
+    "evaluationResult": {
+      "test": "The test maximum is 324, the test number is 60",
+      "model": "GPT",
+      "action": "Option 1: accuracy test",
+      "option": "1",
+      "status": "ok",
+      "outcome": "Correct rate:35/60",
+      "blob_file_name": "processed/2023_Oct30_063333_accuracy_evaluation.csv"
+    },
 }
 
 model_info_id = "'8d2bf4e7-50ef-4b0e-a24a-a19b07d1a091'"
-user_info_id = "'b662007b-3878-415b-a40d-a15dd8b9b15f'"
 test_item = "'Option 1: accuracy test'"
 
-db_ops.insert(evaluation_result, model_info_id, user_info_id, test_item)
+result = db_ops.insert(evaluation_result, model_info_id, test_item)
+print(f"result: {result}")

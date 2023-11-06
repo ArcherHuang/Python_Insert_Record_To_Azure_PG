@@ -1,0 +1,1 @@
+# Python_Insert_Record_To_Azure_PG

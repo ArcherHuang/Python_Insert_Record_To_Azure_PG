@@ -26,9 +26,6 @@
 #     "evaluationCodeVersion": "GitHub Commit SHA",
 #     "evaluationResult": {
 #         "test": "The test maximum is 324, the test number is 60",
-#         "model": "GPT",
-#         "action": "Option 1: accuracy test",
-#         "option": "1",
 #         "status": "ok",
 #         "outcome": "Correct rate:35/60",
 #         "blob_file_name": "processed/2023_Oct30_063333_accuracy_evaluation.csv"
@@ -47,9 +44,6 @@ evaluation_result = {
     "evaluationCodeVersion": "bd30d437bee125befd7d5162d8a9f7fcf9baf57b",
     "evaluationResult": {
       "test": "The test maximum is 324, the test number is 60",
-      "model": "GPT",
-      "action": "Option 1: accuracy test",
-      "option": "1",
       "status": "ok",
       "outcome": "Correct rate:35/60",
       "blob_file_name": "processed/2023_Oct30_063333_accuracy_evaluation.csv"
